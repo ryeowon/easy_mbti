@@ -1,0 +1,23 @@
+body {
+  background: gainsboro;
+}
+
+.background {
+  background-image: url("./background.png");
+  background-size: cover;
+  height: 700px;
+  width: 700px;
+  margin: 0px auto;
+  margin-top: 3vh;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.main_button {
+  background-color: white;
+  border-radius: 10px;
+  height: 40px;
+  width: 300px;
+  padding: 10px;
+  cursor: pointer;
+}
