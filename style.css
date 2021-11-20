@@ -1,0 +1,55 @@
+body {
+  background: gainsboro;
+}
+
+.background {
+  background-image: url("./background.png");
+  background-size: cover;
+  height: 700px;
+  width: 700px;
+  margin: 0px auto;
+  margin-top: 3vh;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.main_button {
+  background-color: white;
+  border-radius: 10px;
+  height: 40px;
+  width: 300px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#box{
+}
+
+.group{
+  background: rgb(255, 255, 255, 0.7);
+  border: 2px;
+  border-radius: 30px;
+  height: 490px;
+  width: 550px;
+  margin: 60px;
+}
+.group_t{
+  padding: 20px;
+  text-align:center;
+}
+.m_dropdown{
+  text-align:center;
+}
+.dropdown{
+  top: 30px;
+  left: 60px;
+}
+#m_selector{
+  text-align: center;
+  width:200px;
+  height:40px;
+  border-width: 3px;
+  border-color: burlywood;
+}
+.home{
+}
