@@ -19,10 +19,10 @@
       </div>
       
       <div class="question_card">
-        <h5>Q 오늘 신나게 놀고 에너지가 방전된 상태, 알고 보니 내일이 공휴일이라면?</h5>
+        <h5 id = "question">Q1. 오늘 신나게 놀고 에너지가 방전된 상태, 알고 보니 내일이 공휴일이라면?</h5>
         
-        <button>바로 친구들과 약속을 잡는다.</button>
-        <button>혼자만의 시간을 즐긴다.</button>
+        <button id = "btn1">바로 친구들과 약속을 잡는다.</button>
+        <button id = "btn2">혼자만의 시간을 즐긴다.</button>
       </div>
       <a href="./index.html">
         <div class="main_button w-25">HOME</div>
@@ -35,5 +35,83 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      let step = 1;
+      let mbti = [];
+      
+      let button1 = document.querySelector('#btn1');
+      let button2 = document.querySelector('#btn2');
+      let question = document.querySelector('#question');
+
+      button1.addEventListener("click", () => {
+        console.log("button clicked");
+
+        switch (step) {
+          case 1:
+            mbti.push("E");
+            step = 2;
+            question.innerHTML = "Q2. '멍을 때린다'의 의미는?"
+            button1.innerHTML = "아무 생각 안 하는 것"
+            button2.innerHTML = "잡생각이 꼬리에 꼬리를 무는 것"
+            break;
+          case 2:
+            mbti.push("S");
+            step = 3;
+            question.innerHTML = "Q3. 친구가 \"나 우울해서 머리 잘랐어\""
+            button1.innerHTML = "잘 어울리네! 어디서 잘랐어?"
+            button2.innerHTML = "무슨일인데? 괜찮아?"
+            break;
+          case 3:
+            mbti.push("T");
+            step = 4;
+            question.innerHTML = "Q4. 여행갈 때 나는"
+            button1.innerHTML = "모든 계획을 철저히 세운다."
+            button2.innerHTML = "즉흥적인게 좋아! 꼭 가고 싶은 곳 몇 군데만 정해 둔다."
+            break;
+          case 4:
+            mbti.push("J");
+            question.innerHTML = "당신의 MBTI는 " + mbti[0] + mbti[1] + mbti[2] + mbti[3];
+            button1.parentNode.removeChild(button1);
+            button2.parentNode.removeChild(button2);
+            break;
+        }
+
+      })
+
+      button2.addEventListener("click", () => {
+        switch (step) {
+          case 1:
+            mbti.push("I");
+            step = 2;
+            question.innerHTML = "Q2. '멍을 때린다'의 의미는?"
+            button1.innerHTML = "아무 생각 안 하는 것"
+            button2.innerHTML = "잡생각이 꼬리에 꼬리를 무는 것"
+            break;
+          case 2:
+            mbti.push("N");
+            step = 3;
+            question.innerHTML = "Q3. 친구가 \"나 우울해서 머리 잘랐어\""
+            button1.innerHTML = "잘 어울리네! 어디서 잘랐어?"
+            button2.innerHTML = "무슨일인데? 괜찮아?"
+            
+            break;
+          case 3:
+            mbti.push("F");
+            step = 4;
+            question.innerHTML = "Q4. 여행갈 때 나는"
+            button1.innerHTML = "모든 계획을 철저히 세운다."
+            button2.innerHTML = "즉흥적인게 좋아! 꼭 가고 싶은 곳 몇 군데만 정해 둔다."
+            break;
+          case 4:
+            mbti.push("P");
+            question.innerHTML = "당신의 MBTI는 " + mbti[0] + mbti[1] + mbti[2] + mbti[3];
+            button1.parentNode.removeChild(button1);
+            button2.parentNode.removeChild(button2);
+            break;
+        }
+      })
+
+      
+    </script>
   </body>
 </html>
