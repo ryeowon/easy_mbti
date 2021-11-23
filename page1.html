@@ -14,38 +14,15 @@
   </head>
   <body>
     <div class="background">
-      ?œ ?˜•ë³? ?Š¹ì§? ?•Œ?•„ë³´ê¸°
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          Select MBTI
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="#">ISTP</a></li>
-          <li><a class="dropdown-item" href="#">ISFP</a></li>
-          <li><a class="dropdown-item" href="#">INFP</a></li>
-          <li><a class="dropdown-item" href="#">INTP</a></li>
-          <li><a class="dropdown-item" href="#">INFJ</a></li>
-          <li><a class="dropdown-item" href="#">INTJ</a></li>
-          <li><a class="dropdown-item" href="#">ISTJ</a></li>
-          <li><a class="dropdown-item" href="#">ISFJ</a></li>
-          <li><a class="dropdown-item" href="#">ESTP</a></li>
-          <li><a class="dropdown-item" href="#">ESFP</a></li>
-          <li><a class="dropdown-item" href="#">ENFP</a></li>
-          <li><a class="dropdown-item" href="#">ENTP</a></li>
-          <li><a class="dropdown-item" href="#">ENFJ</a></li>
-          <li><a class="dropdown-item" href="#">ENTJ</a></li>
-          <li><a class="dropdown-item" href="#">ESTJ</a></li>
-          <li><a class="dropdown-item" href="#">ESFJ</a></li>
-        </ul>
-      </div>
+
       <div id="box">
         <div class="group">
-          <div class="group_t">
+          <div class="group_t1">
             <h3>Select an MBTI that you want to study.</h3>
           </div>
           <div class="m_dropdown">
             <select name="MBTI" id="m_selector">
-              <option value="ISTP">Select MBTI</option>
+              <option value="Selection">Select MBTI</option>
               <option value="ISTP">ISTP</option>
               <option value="ISFP">ISFP</option>
               <option value="INFP">INFP</option>
@@ -66,12 +43,15 @@
       </div>
       </div>
       <div class="home">
-        <button type="button">Home</button>
+        <a href="index.html"><div class="page_button">
+          Home
+        </div></a>
+        
       </div>
-      ?œ ?˜•ë³? ?Š¹ì§? ?•Œ?•„ë³´ê¸°
 
     </div>
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -79,6 +59,126 @@
     ></script>
   </body>
   <script>
+    let temp = document.querySelector('.group');
+    let group_t1 = document.querySelector('.group_t1');
+    let gt = document.getElementsByClassName('group');
+    let box = document.querySelector('#box');
+    let select = document.getElementById('m_selector');
+    let val = select.options[select.selectedIndex].value;
 
+    document.querySelector("#m_selector").addEventListener("click", () => {
+        if(document.getElementById('m_selector').value === "ISTP"){
+          temp.style.display = 'none';
+          let div = document.createElement("div");
+          div.className = 'group_t2';
+          div.innerHTML = "<h4><strong>ISTP</strong></h4><hr>";
+          box.appendChild(div);
+        }
+        if(document.getElementById('m_selector').value === "ISFP"){
+          temp.style.display = 'none';
+          let div = document.createElement("div");
+          div.className = 'group_t2';
+          div.innerHTML = "<h4><strong>ISFP</strong></h4><hr>";
+          box.appendChild(div);
+        }
+        if(document.getElementById('m_selector').value === "INFP"){
+          temp.style.display = 'none';
+          let div = document.createElement("div");
+          div.className = 'group_t2';
+          div.innerHTML = "<h4><strong>INFP</strong></h4><hr>";
+          box.appendChild(div);
+        }
+        if(document.getElementById('m_selector').value === "INTP"){
+          temp.style.display = 'none';
+          let div = document.createElement("div");
+          div.className = 'group_t2';
+          div.innerHTML = "<h4><strong>INTP</strong></h4><hr>";
+          box.appendChild(div);
+        }
+        if(document.getElementById('m_selector').value === "INFJ"){
+          temp.style.display = 'none';
+          let div = document.createElement("div");
+          div.className = 'group_t2';
+          div.innerHTML = "<h4><strong>INFJ</strong></h4><hr>";
+          box.appendChild(div);
+        }
+        if(document.getElementById('m_selector').value === "INTJ"){
+          temp.style.display = 'none';
+          let div = document.createElement("div");
+          div.className = 'group_t2';
+          div.innerHTML = "<h4><strong>INTJ</strong></h4><hr>";
+          box.appendChild(div);
+        }
+        if(document.getElementById('m_selector').value === "ISTJ"){
+          temp.style.display = 'none';
+          let div = document.createElement("div");
+          div.className = 'group_t2';
+          div.innerHTML = "<h4><strong>ISTJ</strong></h4><hr>";
+          box.appendChild(div);
+        }
+        if(document.getElementById('m_selector').value === "ISFJ"){
+          temp.style.display = 'none';
+          let div = document.createElement("div");
+          div.className = 'group_t2';
+          div.innerHTML = "<h4><strong>ISFJ</strong></h4><hr>";
+          box.appendChild(div);
+        }
+        if(document.getElementById('m_selector').value === "ESTP"){
+          temp.style.display = 'none';
+          let div = document.createElement("div");
+          div.className = 'group_t2';
+          div.innerHTML = "<h4><strong>ESTP</strong></h4><hr>";
+          box.appendChild(div);
+        }
+        if(document.getElementById('m_selector').value === "ESFP"){
+          temp.style.display = 'none';
+          let div = document.createElement("div");
+          div.className = 'group_t2';
+          div.innerHTML = "<h4><strong>ESFP</strong></h4><hr>";
+          box.appendChild(div);
+        }
+        if(document.getElementById('m_selector').value === "ENFP"){
+          temp.style.display = 'none';
+          let div = document.createElement("div");
+          div.className = 'group_t2';
+          div.innerHTML = "<h4><strong>ENFP</strong></h4><hr>";
+          box.appendChild(div);
+        }
+        if(document.getElementById('m_selector').value === "ENTP"){
+          temp.style.display = 'none';
+          let div = document.createElement("div");
+          div.className = 'group_t2';
+          div.innerHTML = "<h4><strong>ENTP</strong></h4><hr>";
+          box.appendChild(div);
+        }
+        if(document.getElementById('m_selector').value === "ENFJ"){
+          temp.style.display = 'none';
+          let div = document.createElement("div");
+          div.className = 'group_t2';
+          div.innerHTML = "<h4><strong>ENFJ</strong></h4><hr>";
+          box.appendChild(div);
+        }
+        if(document.getElementById('m_selector').value === "ENTJ"){
+          temp.style.display = 'none';
+          let div = document.createElement("div");
+          div.className = 'group_t2';
+          div.innerHTML = "<h4><strong>ENTJ</strong></h4><hr>";
+          box.appendChild(div);
+        }
+        if(document.getElementById('m_selector').value === "ESTJ"){
+          temp.style.display = 'none';
+          let div = document.createElement("div");
+          div.className = 'group_t2';
+          div.innerHTML = "<h4><strong>ESTJ</strong></h4><hr>";
+          box.appendChild(div);
+        }
+        if(document.getElementById('m_selector').value === "ESFJ"){
+          temp.style.display = 'none';
+          let div = document.createElement("div");
+          div.className = 'group_t2';
+          div.innerHTML = "<h4><strong>ESFJ</strong></h4><hr>";
+          box.appendChild(div);
+        }
+      })
   </script>
 </html>
