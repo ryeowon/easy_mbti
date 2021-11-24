@@ -63,18 +63,23 @@ a:hover {
   height: 490px;
   width: 550px;
 }
-hr{
+hr.new1{
   width: 50%;
 }
+hr.new2{
+  width: 100%;
+}
+
 .group{
+  
 }
 .group_t1{
   padding: 100px;
   text-align:center;
   /*border: 5cm;
   border-width: 5px;*/
-
 }
+
 .group_t2{
   padding: 20px;
   text-align:left;
@@ -94,11 +99,30 @@ hr{
   border-color: burlywood;
 }
 
+.scrollbar{
+  width: 540px;
+  height: 230px;
+  overflow-y: scroll;
+}
+
 .page_button{
   border-width: 40px;
   border-color: black;
 }
 
-.home{
+.back{
+  background-color: rgba(255, 255, 255, 0.7);
   margin-top: 40px;
+  height: 30px;
+  width: 70px;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.back:hover{
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 7px rgb(168, 165, 157);
 }

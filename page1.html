@@ -42,11 +42,14 @@
           </div>
       </div>
       </div>
-      <div class="home">
-        <a href="index.html"><div class="page_button">
-          Home
-        </div></a>
-        
+      <div class="back">
+        <a href="index.html">Home</a>
+      </div>
+
+      <!--<div class="back">
+        Back
+        </div>
+      -->
       </div>
 
     </div>
@@ -60,8 +63,10 @@
   </body>
   <script>
     let temp = document.querySelector('.group');
+    let home = document.querySelector('.back');
     let group_t1 = document.querySelector('.group_t1');
     let gt = document.getElementsByClassName('group');
+    let background = document.querySelector('.background');
     let box = document.querySelector('#box');
     let select = document.getElementById('m_selector');
     let val = select.options[select.selectedIndex].value;
@@ -69,114 +74,135 @@
     document.querySelector("#m_selector").addEventListener("click", () => {
         if(document.getElementById('m_selector').value === "ISTP"){
           temp.style.display = 'none';
+          home.style.display = 'none';
           let div = document.createElement("div");
+          let div2 = document.createElement("div");
+          let div3 = document.createElement("div");
+          let hr = document.createElement("hr");
+          let ul = document.createElement("ul");
+          let li = document.createElement("li");
           div.className = 'group_t2';
-          div.innerHTML = "<h4><strong>ISTP</strong></h4><hr>";
+          div.innerHTML = '<h4><strong>ISTP</strong></h4><hr class="new1">';
           box.appendChild(div);
+          div2.className = 'scrollbar';
+          div2.appendChild(ul);
+          //how to append li?..
+          box.appendChild(div2);
+          hr.className = 'new2';
+          box.appendChild(document.createElement("hr"))
+          div3.className = 'back';
+          div3.innerHTML = 'Back';
+          background.appendChild(div3);
+          let cur = document.querySelector('.back')
+          let sib = cur.nextElementSibling;
+          sib.addEventListener("click", () => {
+            div3.remove();
+            home.style.display = 'block';
+          })
         }
         if(document.getElementById('m_selector').value === "ISFP"){
           temp.style.display = 'none';
           let div = document.createElement("div");
           div.className = 'group_t2';
-          div.innerHTML = "<h4><strong>ISFP</strong></h4><hr>";
+          div.innerHTML = '<h4><strong>Curious Artist - ISFP</strong></h4><hr class="new1">';
           box.appendChild(div);
         }
         if(document.getElementById('m_selector').value === "INFP"){
           temp.style.display = 'none';
           let div = document.createElement("div");
           div.className = 'group_t2';
-          div.innerHTML = "<h4><strong>INFP</strong></h4><hr>";
+          div.innerHTML = '<h4><strong>INFP</strong></h4><hr class="new1">';
           box.appendChild(div);
         }
         if(document.getElementById('m_selector').value === "INTP"){
           temp.style.display = 'none';
           let div = document.createElement("div");
           div.className = 'group_t2';
-          div.innerHTML = "<h4><strong>INTP</strong></h4><hr>";
+          div.innerHTML = '<h4><strong>INTP</strong></h4><hr class="new1">';
           box.appendChild(div);
         }
         if(document.getElementById('m_selector').value === "INFJ"){
           temp.style.display = 'none';
           let div = document.createElement("div");
           div.className = 'group_t2';
-          div.innerHTML = "<h4><strong>INFJ</strong></h4><hr>";
+          div.innerHTML = '<h4><strong>INFJ</strong></h4><hr class="new1">';
           box.appendChild(div);
         }
         if(document.getElementById('m_selector').value === "INTJ"){
           temp.style.display = 'none';
           let div = document.createElement("div");
           div.className = 'group_t2';
-          div.innerHTML = "<h4><strong>INTJ</strong></h4><hr>";
+          div.innerHTML = '<h4><strong>INTJ</strong></h4><hr class="new1">';
           box.appendChild(div);
         }
         if(document.getElementById('m_selector').value === "ISTJ"){
           temp.style.display = 'none';
           let div = document.createElement("div");
           div.className = 'group_t2';
-          div.innerHTML = "<h4><strong>ISTJ</strong></h4><hr>";
+          div.innerHTML = '<h4><strong>ISTJ</strong></h4><hr class="new1">';
           box.appendChild(div);
         }
         if(document.getElementById('m_selector').value === "ISFJ"){
           temp.style.display = 'none';
           let div = document.createElement("div");
           div.className = 'group_t2';
-          div.innerHTML = "<h4><strong>ISFJ</strong></h4><hr>";
+          div.innerHTML = '<h4><strong>ISFJ</strong></h4><hr class="new1">';
           box.appendChild(div);
         }
         if(document.getElementById('m_selector').value === "ESTP"){
           temp.style.display = 'none';
           let div = document.createElement("div");
           div.className = 'group_t2';
-          div.innerHTML = "<h4><strong>ESTP</strong></h4><hr>";
+          div.innerHTML = '<h4><strong>ESTP</strong></h4><hr class="new1">';
           box.appendChild(div);
         }
         if(document.getElementById('m_selector').value === "ESFP"){
           temp.style.display = 'none';
           let div = document.createElement("div");
           div.className = 'group_t2';
-          div.innerHTML = "<h4><strong>ESFP</strong></h4><hr>";
+          div.innerHTML = '<h4><strong>ESFP</strong></h4><hr class="new1">';
           box.appendChild(div);
         }
         if(document.getElementById('m_selector').value === "ENFP"){
           temp.style.display = 'none';
           let div = document.createElement("div");
           div.className = 'group_t2';
-          div.innerHTML = "<h4><strong>ENFP</strong></h4><hr>";
+          div.innerHTML = '<h4><strong>ENFP</strong></h4><hr class="new1">';
           box.appendChild(div);
         }
         if(document.getElementById('m_selector').value === "ENTP"){
           temp.style.display = 'none';
           let div = document.createElement("div");
           div.className = 'group_t2';
-          div.innerHTML = "<h4><strong>ENTP</strong></h4><hr>";
+          div.innerHTML = '<h4><strong>ENTP</strong></h4><hr class="new1">';
           box.appendChild(div);
         }
         if(document.getElementById('m_selector').value === "ENFJ"){
           temp.style.display = 'none';
           let div = document.createElement("div");
           div.className = 'group_t2';
-          div.innerHTML = "<h4><strong>ENFJ</strong></h4><hr>";
+          div.innerHTML = '<h4><strong>ENFJ</strong></h4><hr class="new1">';
           box.appendChild(div);
         }
         if(document.getElementById('m_selector').value === "ENTJ"){
           temp.style.display = 'none';
           let div = document.createElement("div");
           div.className = 'group_t2';
-          div.innerHTML = "<h4><strong>ENTJ</strong></h4><hr>";
+          div.innerHTML = '<h4><strong>ENTJ</strong></h4><hr class="new1">';
           box.appendChild(div);
         }
         if(document.getElementById('m_selector').value === "ESTJ"){
           temp.style.display = 'none';
           let div = document.createElement("div");
           div.className = 'group_t2';
-          div.innerHTML = "<h4><strong>ESTJ</strong></h4><hr>";
+          div.innerHTML = '<h4><strong>ESTJ</strong></h4><hr class="new1">';
           box.appendChild(div);
         }
         if(document.getElementById('m_selector').value === "ESFJ"){
           temp.style.display = 'none';
           let div = document.createElement("div");
           div.className = 'group_t2';
-          div.innerHTML = "<h4><strong>ESFJ</strong></h4><hr>";
+          div.innerHTML = '<h4><strong>ESFJ</strong></h4><hr class="new1">';
           box.appendChild(div);
         }
       })
