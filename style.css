@@ -54,17 +54,27 @@ a:hover {
 .lightbrown {
   color: rgb(109, 93, 58);
 }
-.hr_line{
-  border: 1px solid gray;
-
+.hr_line1{
+  border: 0.1px solid rgb(212, 212, 212);
+  width: 250px;
+  margin-left:25px;
 }
+
+.hr_line2{
+  border: 0.1px solid rgb(212, 212, 212);
+  width: 500px;
+  margin: 0px auto;
+}
+
+.vr_line{
+  border: 0.1px solid rgb(212, 212, 212);
+  width: 0.1px;
+  height: 185px;
+  margin-left:270px;
+  position:absolute;
+}
+
 #box{
-  margin:30px;
-  background: rgb(255, 255, 255, 0.7);
-  border: 2px;
-  border-radius: 30px;
-  height: 490px;
-  width: 550px;
 }
 
 
@@ -80,19 +90,28 @@ hr.new2{
   display: flex;
 }
 .group{
-  margin-left: 30px;
-}
-.group_t1{
-  padding: 150px;
-  text-align:center;
-  /*border: 5cm;
-  border-width: 5px;*/
+  background: rgb(255, 255, 255, 0.7);
+  border: 2px;
+  border-radius: 30px;
+  height: 490px;
+  width: 550px;
+  margin: 30px;
 }
 
-.group_t2{
-  padding: 20px;
-  text-align:left;
+.group_t{
+  padding: 19px;
+  padding-bottom: 3px;
+  margin-left: 10px;
 }
+
+
+
+.group_t2{
+  display: flex;
+  justify-content:space-around;
+  margin-right: 20px;
+}
+
 .m_dropdown{
   display:flex;
 }
@@ -107,17 +126,53 @@ hr.new2{
   border-width: 3px;
   border-color: burlywood;
 }
+.txt{
+  display: flex;
+  justify-content: space-between;
 
+}
+h3{
+  margin-bottom: 0px;
+}
 .scrollbar{
   width: 540px;
   height: 230px;
   overflow-y: scroll;
 }
+.scrollbar0{
+  margin-left: 3px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  width: 540px;
+  height: 180px;
+  overflow-y: scroll;
+}
 
+.scrollbar1{
+  margin-left: 3px;
+  margin-top: 10px;
+  width: 250px;
+  height: 125px;
+  overflow-y: scroll;
+  margin-right:40px;
+}
+
+.scrollbar2{
+  margin-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 250px;
+  height: 125px;
+  overflow-y: scroll;
+}
 ul{
-    margin-left: 20px;
-    font-size: x-large;
- }
+  list-style-type: disclosure-closed;
+  margin-left: 20px;
+  font-size: x-large;
+}
+.jobs_celb{
+  margin-left: 20px;
+}
 
 .page_button{
   border-width: 40px;
