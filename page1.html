@@ -14,7 +14,8 @@
   </head>
   <body>
     <div class="background">
-      <div class="m_dropdown">
+      <div class="upper_part">
+        <div class="m_dropdown">
         <select name="MBTI" id="m_selector">
           <option value="Selection">Select MBTI</option>
           <option value="ISTP">ISTP</option>
@@ -33,23 +34,22 @@
           <option value="ESTJ">ESTJ</option>
           <option value="ESFJ">ESFJ</option>
         </select>
-        
 
+      </div>
       </div>
       <div id="box">
         <div class="group">
-          <div class="group_t1">
+          <div class="group_title">
+            Not selected
           </div>
       </div>
       </div>
-      <div class="back">
-        <a href="index.html">Home</a>
-      </div>
-
-      <!--<div class="back">
-        Back
+      <a href="./index.html">
+        <div class="main_button w-25">
+          Home
         </div>
-      -->
+      </a>
+
       </div>
 
     </div>
@@ -62,8 +62,8 @@
     ></script>
   </body>
   <script>
+
     let group = document.querySelector('.group'); //temp¿´´ø °Í
-    let home = document.querySelector('.back');
     let group_t1 = document.querySelector('.group_t1');
     let gt = document.getElementsByClassName('group');
     let background = document.querySelector('.background');
@@ -73,34 +73,8 @@
 
     document.querySelector("#m_selector").addEventListener("click", () => {
         if(document.getElementById('m_selector').value === "ISTP"){
-          group.innerHTML = 
-          '          <div class="group_t">    <h4><strong>Curious Artist - ISFP</strong></h4>    </div>    <div class="hr_line1">          </div>    <div class="scrollbar0">      <ul>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>      </ul>    </div>    <div class="group_t">    </div>    <div class="hr_line2"></div>    <div class="vr_line">    </div>    <div class="group_t2">    <div class="jobs_celb"><h3>Best Jobs</h3></div>    <div class="jobs_celb"><h3>Celebrity</h3></div></div><div class="txt"><div class="txt1"></div><div class="scrollbar1">  <ul>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>  </ul></div><div class="txt2"></div><div class="scrollbar2">  <ul>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>  </ul></div></div>';
-          /*(temp.style.display = 'none';
-          home.style.display = 'none';
-          let div = document.createElement("div");
-          let div2 = document.createElement("div");
-          let div3 = document.createElement("div");
-          let hr = document.createElement("hr");
-          let ul = document.createElement("ul");
-          let li = document.createElement("li");
-          div.className = 'group_t2';
-          div.innerHTML = '<h4><strong>ISTP</strong></h4><hr class="new1">';
-          box.appendChild(div);
-          div2.className = 'scrollbar';
-          div2.appendChild(ul);
-          //how to append li?..
-          box.appendChild(div2);
-          hr.className = 'new2';
-          box.appendChild(document.createElement("hr"))
-          div3.className = 'back';
-          div3.innerHTML = 'Back';
-          background.appendChild(div3);
-          let cur = document.querySelector('.back')
-          let sib = cur.nextElementSibling;
-          sib.addEventListener("click", () => {
-            div3.remove();
-            home.style.display = 'block';
-          })*/
+          group.innerHTML =   '<div class="k_ratio">Korean per<br>5.9%</div><div class="group_t">    <h4><strong>Curious Artist - ISFP</strong></h4>    </div>    <div class="hr_line1">          </div>    <div class="scrollbar0">      <ul>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>      </ul>    </div>    <div class="group_t">    </div>    <div class="hr_line2"></div>    <div class="vr_line">    </div>    <div class="group_t2">    <div class="jobs_celb"><h3>Best Jobs</h3></div>    <div class="jobs_celb"><h3>Celebrities</h3></div></div><div class="txt"><div class="txt1"></div><div class="scrollbar1">  <ul>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>  </ul></div><div class="txt2"></div><div class="scrollbar2">  <ul>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>  </ul></div></div>';
+
         }
         if(document.getElementById('m_selector').value === "ISFP"){
           group.innerHTML = 
