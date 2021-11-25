@@ -14,31 +14,31 @@
   </head>
   <body>
     <div class="background">
+      <div class="m_dropdown">
+        <select name="MBTI" id="m_selector">
+          <option value="Selection">Select MBTI</option>
+          <option value="ISTP">ISTP</option>
+          <option value="ISFP">ISFP</option>
+          <option value="INFP">INFP</option>
+          <option value="INTP">INTP</option>
+          <option value="INTJ">INTJ</option>
+          <option value="ISTJ">ISTJ</option>
+          <option value="ISFJ">ISFJ</option>
+          <option value="ESTP">ESTP</option>
+          <option value="ESFP">ESFP</option>
+          <option value="ENFP">ENFP</option>
+          <option value="ENTP">ENTP</option>
+          <option value="ENFJ">ENFJ</option>
+          <option value="ENTJ">ENTJ</option>
+          <option value="ESTJ">ESTJ</option>
+          <option value="ESFJ">ESFJ</option>
+        </select>
+        
 
+      </div>
       <div id="box">
         <div class="group">
           <div class="group_t1">
-            <h3>Select an MBTI that you want to study.</h3>
-          </div>
-          <div class="m_dropdown">
-            <select name="MBTI" id="m_selector">
-              <option value="Selection">Select MBTI</option>
-              <option value="ISTP">ISTP</option>
-              <option value="ISFP">ISFP</option>
-              <option value="INFP">INFP</option>
-              <option value="INTP">INTP</option>
-              <option value="INTJ">INTJ</option>
-              <option value="ISTJ">ISTJ</option>
-              <option value="ISFJ">ISFJ</option>
-              <option value="ESTP">ESTP</option>
-              <option value="ESFP">ESFP</option>
-              <option value="ENFP">ENFP</option>
-              <option value="ENTP">ENTP</option>
-              <option value="ENFJ">ENFJ</option>
-              <option value="ENTJ">ENTJ</option>
-              <option value="ESTJ">ESTJ</option>
-              <option value="ESFJ">ESFJ</option>
-            </select>
           </div>
       </div>
       </div>
@@ -62,7 +62,7 @@
     ></script>
   </body>
   <script>
-    let temp = document.querySelector('.group');
+    let group = document.querySelector('.group'); //temp¿´´ø °Í
     let home = document.querySelector('.back');
     let group_t1 = document.querySelector('.group_t1');
     let gt = document.getElementsByClassName('group');
@@ -73,7 +73,9 @@
 
     document.querySelector("#m_selector").addEventListener("click", () => {
         if(document.getElementById('m_selector').value === "ISTP"){
-          temp.style.display = 'none';
+          group.innerHTML = 
+          '<div class="group_t"><h4><strong>Virtuoso - ISTP</strong></h4><div class="hr_line"></div></div><div class="scrollbar"><ul><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li> </ul></div><div class="group_t"><hr></div> <div class="group_t2">Best Jobs<div class="updown"></div> ISFP celebrity </div>';
+          /*(temp.style.display = 'none';
           home.style.display = 'none';
           let div = document.createElement("div");
           let div2 = document.createElement("div");
@@ -98,112 +100,67 @@
           sib.addEventListener("click", () => {
             div3.remove();
             home.style.display = 'block';
-          })
+          })*/
         }
         if(document.getElementById('m_selector').value === "ISFP"){
-          temp.style.display = 'none';
-          let div = document.createElement("div");
-          div.className = 'group_t2';
-          div.innerHTML = '<h4><strong>Curious Artist - ISFP</strong></h4><hr class="new1">';
-          box.appendChild(div);
+          group.innerHTML = 
+          '<div class="group_t"><h4><strong>Virtuoso - ISFP</strong></h4><div class="hr_line"></div></div><div class="scrollbar"><ul><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li> </ul></div><div class="group_t"><hr></div> <div class="group_t2">Best Jobs<div class="updown"></div> ISFP celebrity </div>';
         }
         if(document.getElementById('m_selector').value === "INFP"){
-          temp.style.display = 'none';
-          let div = document.createElement("div");
-          div.className = 'group_t2';
-          div.innerHTML = '<h4><strong>INFP</strong></h4><hr class="new1">';
-          box.appendChild(div);
+          group.innerHTML = 
+          '<div class="group_t"><h4><strong>Virtuoso - INFP</strong></h4><div class="hr_line"></div></div><div class="scrollbar"><ul><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li> </ul></div><div class="group_t"><hr></div> <div class="group_t2">Best Jobs<div class="updown"></div> ISFP celebrity </div>';
         }
         if(document.getElementById('m_selector').value === "INTP"){
-          temp.style.display = 'none';
-          let div = document.createElement("div");
-          div.className = 'group_t2';
-          div.innerHTML = '<h4><strong>INTP</strong></h4><hr class="new1">';
-          box.appendChild(div);
+          group.innerHTML = 
+          '<div class="group_t"><h4><strong>Virtuoso - INTP</strong></h4><div class="hr_line"></div></div><div class="scrollbar"><ul><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li> </ul></div><div class="group_t"><hr></div> <div class="group_t2">Best Jobs<div class="updown"></div> ISFP celebrity </div>';
         }
         if(document.getElementById('m_selector').value === "INFJ"){
-          temp.style.display = 'none';
-          let div = document.createElement("div");
-          div.className = 'group_t2';
-          div.innerHTML = '<h4><strong>INFJ</strong></h4><hr class="new1">';
-          box.appendChild(div);
+          group.innerHTML = 
+          '<div class="group_t"><h4><strong>Virtuoso - INFJ</strong></h4><div class="hr_line"></div></div><div class="scrollbar"><ul><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li> </ul></div><div class="group_t"><hr></div> <div class="group_t2">Best Jobs<div class="updown"></div> ISFP celebrity </div>';
         }
         if(document.getElementById('m_selector').value === "INTJ"){
-          temp.style.display = 'none';
-          let div = document.createElement("div");
-          div.className = 'group_t2';
-          div.innerHTML = '<h4><strong>INTJ</strong></h4><hr class="new1">';
-          box.appendChild(div);
+          group.innerHTML = 
+          '<div class="group_t"><h4><strong>Virtuoso - INTJ</strong></h4><div class="hr_line"></div></div><div class="scrollbar"><ul><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li> </ul></div><div class="group_t"><hr></div> <div class="group_t2">Best Jobs<div class="updown"></div> ISFP celebrity </div>';
         }
         if(document.getElementById('m_selector').value === "ISTJ"){
-          temp.style.display = 'none';
-          let div = document.createElement("div");
-          div.className = 'group_t2';
-          div.innerHTML = '<h4><strong>ISTJ</strong></h4><hr class="new1">';
-          box.appendChild(div);
+          group.innerHTML = 
+          '<div class="group_t"><h4><strong>Virtuoso - ISTJ</strong></h4><div class="hr_line"></div></div><div class="scrollbar"><ul><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li> </ul></div><div class="group_t"><hr></div> <div class="group_t2">Best Jobs<div class="updown"></div> ISFP celebrity </div>';
         }
         if(document.getElementById('m_selector').value === "ISFJ"){
-          temp.style.display = 'none';
-          let div = document.createElement("div");
-          div.className = 'group_t2';
-          div.innerHTML = '<h4><strong>ISFJ</strong></h4><hr class="new1">';
-          box.appendChild(div);
+          group.innerHTML = 
+          '<div class="group_t"><h4><strong>Virtuoso - ISFJ</strong></h4><div class="hr_line"></div></div><div class="scrollbar"><ul><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li> </ul></div><div class="group_t"><hr></div> <div class="group_t2">Best Jobs<div class="updown"></div> ISFP celebrity </div>';
         }
         if(document.getElementById('m_selector').value === "ESTP"){
-          temp.style.display = 'none';
-          let div = document.createElement("div");
-          div.className = 'group_t2';
-          div.innerHTML = '<h4><strong>ESTP</strong></h4><hr class="new1">';
-          box.appendChild(div);
+          group.innerHTML = 
+          '<div class="group_t"><h4><strong>Virtuoso - ESTP</strong></h4><div class="hr_line"></div></div><div class="scrollbar"><ul><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li> </ul></div><div class="group_t"><hr></div> <div class="group_t2">Best Jobs<div class="updown"></div> ISFP celebrity </div>';
         }
         if(document.getElementById('m_selector').value === "ESFP"){
-          temp.style.display = 'none';
-          let div = document.createElement("div");
-          div.className = 'group_t2';
-          div.innerHTML = '<h4><strong>ESFP</strong></h4><hr class="new1">';
-          box.appendChild(div);
+          group.innerHTML = 
+          '<div class="group_t"><h4><strong>Virtuoso - ESFP</strong></h4><div class="hr_line"></div></div><div class="scrollbar"><ul><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li> </ul></div><div class="group_t"><hr></div> <div class="group_t2">Best Jobs<div class="updown"></div> ISFP celebrity </div>';
         }
         if(document.getElementById('m_selector').value === "ENFP"){
-          temp.style.display = 'none';
-          let div = document.createElement("div");
-          div.className = 'group_t2';
-          div.innerHTML = '<h4><strong>ENFP</strong></h4><hr class="new1">';
-          box.appendChild(div);
+          group.innerHTML = 
+          '<div class="group_t"><h4><strong>Virtuoso - ENFP</strong></h4><div class="hr_line"></div></div><div class="scrollbar"><ul><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li> </ul></div><div class="group_t"><hr></div> <div class="group_t2">Best Jobs<div class="updown"></div> ISFP celebrity </div>';
         }
         if(document.getElementById('m_selector').value === "ENTP"){
-          temp.style.display = 'none';
-          let div = document.createElement("div");
-          div.className = 'group_t2';
-          div.innerHTML = '<h4><strong>ENTP</strong></h4><hr class="new1">';
-          box.appendChild(div);
+          group.innerHTML = 
+          '<div class="group_t"><h4><strong>Virtuoso - ENTP</strong></h4><div class="hr_line"></div></div><div class="scrollbar"><ul><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li> </ul></div><div class="group_t"><hr></div> <div class="group_t2">Best Jobs<div class="updown"></div> ISFP celebrity </div>';
         }
         if(document.getElementById('m_selector').value === "ENFJ"){
-          temp.style.display = 'none';
-          let div = document.createElement("div");
-          div.className = 'group_t2';
-          div.innerHTML = '<h4><strong>ENFJ</strong></h4><hr class="new1">';
-          box.appendChild(div);
+          group.innerHTML = 
+          '<div class="group_t"><h4><strong>Virtuoso - ENFJ</strong></h4><div class="hr_line"></div></div><div class="scrollbar"><ul><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li> </ul></div><div class="group_t"><hr></div> <div class="group_t2">Best Jobs<div class="updown"></div> ISFP celebrity </div>';
         }
         if(document.getElementById('m_selector').value === "ENTJ"){
-          temp.style.display = 'none';
-          let div = document.createElement("div");
-          div.className = 'group_t2';
-          div.innerHTML = '<h4><strong>ENTJ</strong></h4><hr class="new1">';
-          box.appendChild(div);
+          group.innerHTML = 
+          '<div class="group_t"><h4><strong>Virtuoso - ENTJ</strong></h4><div class="hr_line"></div></div><div class="scrollbar"><ul><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li> </ul></div><div class="group_t"><hr></div> <div class="group_t2">Best Jobs<div class="updown"></div> ISFP celebrity </div>';
         }
         if(document.getElementById('m_selector').value === "ESTJ"){
-          temp.style.display = 'none';
-          let div = document.createElement("div");
-          div.className = 'group_t2';
-          div.innerHTML = '<h4><strong>ESTJ</strong></h4><hr class="new1">';
-          box.appendChild(div);
+          group.innerHTML = 
+          '<div class="group_t"><h4><strong>Virtuoso - ESTJ</strong></h4><div class="hr_line"></div></div><div class="scrollbar"><ul><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li> </ul></div><div class="group_t"><hr></div> <div class="group_t2">Best Jobs<div class="updown"></div> ISFP celebrity </div>';
         }
         if(document.getElementById('m_selector').value === "ESFJ"){
-          temp.style.display = 'none';
-          let div = document.createElement("div");
-          div.className = 'group_t2';
-          div.innerHTML = '<h4><strong>ESFJ</strong></h4><hr class="new1">';
-          box.appendChild(div);
+          group.innerHTML = 
+          '<div class="group_t"><h4><strong>Virtuoso - ESFJ</strong></h4><div class="hr_line"></div></div><div class="scrollbar"><ul><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li><li>Nothing</li> </ul></div><div class="group_t"><hr></div> <div class="group_t2">Best Jobs<div class="updown"></div> ISFP celebrity </div>';
         }
       })
   </script>
