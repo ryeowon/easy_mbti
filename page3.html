@@ -130,10 +130,16 @@
             link.href = "./page1.html";
             
             let btn = document.createElement("button");
+            let restart = document.createElement("button");
+            //restart.addEventListener("click", () => {
+            //  location.reload();
+            //})
             link.appendChild(btn);
+            restart.textContent = "다시하기"
             btn.textContent = mbti[0] + mbti[1] + mbti[2] + mbti[3] + " 특징 알아보러 가기"
             card.appendChild(result);
             card.appendChild(link);
+            card.appendChild(restart);
             break;
         }
       })
