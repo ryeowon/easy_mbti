@@ -91,3 +91,35 @@ a:hover {
 .lightbrown {
   color: rgb(109, 93, 58);
 }
+
+
+.mbti_list1 {
+  position: relative;
+  top: 100px;
+  left: 150px;
+  
+}
+
+
+.mbti_list2 {
+  position: relative;
+  top: -25px;
+  left: 200px;
+
+}
+
+
+#see_relation1 {
+  position: relative;
+  top: 50px;
+  left: -88px;
+  
+}
+
+#story {
+  position: relative;
+  top: 150px;
+  right: 265px;
+  
+}
+
