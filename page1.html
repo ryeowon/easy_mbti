@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="EUC-KR" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -14,14 +14,128 @@
   </head>
   <body>
     <div class="background">
-      ìœ í˜•ë³„ íŠ¹ì§• ì•Œì•„ë³´ê¸°
+      <div class="upper_part">
+        <div class="m_dropdown">
+        <select name="MBTI" id="m_selector">
+          <option value="Selection">Select MBTI</option>
+          <option value="ISTP">ISTP</option>
+          <option value="ISFP">ISFP</option>
+          <option value="INFP">INFP</option>
+          <option value="INTP">INTP</option>
+          <option value="INTJ">INTJ</option>
+          <option value="ISTJ">ISTJ</option>
+          <option value="ISFJ">ISFJ</option>
+          <option value="ESTP">ESTP</option>
+          <option value="ESFP">ESFP</option>
+          <option value="ENFP">ENFP</option>
+          <option value="ENTP">ENTP</option>
+          <option value="ENFJ">ENFJ</option>
+          <option value="ENTJ">ENTJ</option>
+          <option value="ESTJ">ESTJ</option>
+          <option value="ESFJ">ESFJ</option>
+        </select>
+
+      </div>
+      </div>
+      <div id="box">
+        <div class="group">
+          <div class="group_title">
+            <h4 style="margin-bottom: 0px; text-align:center;"><strong>MBTI ¼ºÇâ</strong></h4>
+<br>
+<strong>I</strong>ntroversion[³»Çâ]: Á¶¿ëÇÏ°í ½ÅÁßÇÏ¸ç ¼Ò¼öÀÇ »ç¶÷µé°úÀÇ ±íÀº ´ëÀÎ°ü°è¸¦ ¼±È£
+<br>
+<strong>E</strong>xtraversion[¿ÜÇâ]: »ç±³¼ºÀÌ ¶Ù¾î³ª°í È°µ¿ÀûÀÌ¸ç Æø ³ÐÀº ´ëÀÎ°ü°è¸¦ °¡Áü
+<br>
+<br>
+i<strong>N</strong>tuition[Á÷°ü]: ¿µ°¨¿¡ ÀÇÁ¸ÇÏ¸ç ¹Ì·¡ÁöÇâÀûÀÌ°í ÀÏÀ» ½Å¼ÓÈ÷ Ã³¸®
+<br>
+<strong>S</strong>ensing[°¨°¢]: ¿À°¨°ú ½ÇÁ¦ °æÇè¿¡ ÀÇÁ¸ÇÏ¸ç ÇöÀçÀÇ °ÍÀ» Ã¶ÀúÇÏ°Ô Ã³¸®
+<br>
+<br>
+<strong>F</strong>eeling[°¨Á¤]: °ü°è¿Í »ç¶÷À» À§ÁÖ·Î »ý°¢ÇÏ¸ç »óÈ²À» °í·ÁÇÏ¿© ÆÇ´Ü
+<br>
+<strong>T</strong>hinking[»ç°í]: ÁÖ·Î »ç½Ç¿¡ °ü½ÉÀ» °¡Áö¸ç ³í¸®, ºÐ¼®, °´°üÀ» ÅëÇØ ÆÇ´Ü
+<br>
+<br>
+<strong>P</strong>erceiving[ÀÎ½Ä]: ¸ñÀû°ú ¹æÇâÀ» À¯µ¿ÀûÀ¸·Î º¯È­½ÃÅ°¸ç ÀÚÀ²ÀûÀÌ°Ô ÀÏÀ» Ã³¸®
+<br>
+<strong>J</strong>udging[ÆÇ´Ü]: ¸ñÀû°ú ¹æÇâÀ» ºÐ¸íÇÏ°Ô Á¤ÇÏ¸ç Ã¼°èÀûÀÎ ÀÏÃ³¸®¸¦ ¼±È£
+
+          </div>
+      </div>
+      </div>
+      <a href="./index.html"><button class="main_button w-25"style ="border:transparent; margin-top: 0px">Home</button></a>
+
+
+      </div>
 
     </div>
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
   </body>
+  <script>
+
+    let group = document.querySelector('.group'); //temp¿´´ø °Í
+    let group_t1 = document.querySelector('.group_t1');
+    let gt = document.getElementsByClassName('group');
+    let background = document.querySelector('.background');
+    let box = document.querySelector('#box');
+    let select = document.getElementById('m_selector');
+    let val = select.options[select.selectedIndex].value;
+
+    document.querySelector("#m_selector").addEventListener("click", () => {
+        if(document.getElementById('m_selector').value === "ISTP"){
+          group.innerHTML =   '<div class="k_ratio">ÇÑ±¹ÀÎ Áß<br>4.4%</div><div class="group_t">    <h4><strong>¹é°ú»çÀüÇü - ISTP</strong></h4>    </div>    <div class="hr_line1">          </div>    <div class="scrollbar0">      <ul>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>      </ul>    </div>    <div class="group_t">    </div>    <div class="hr_line2"></div>    <div class="vr_line">    </div>    <div class="group_t2">    <div class="jobs_celb"><h3>Best Jobs</h3></div>    <div class="jobs_celb"><h3>Celebrities</h3></div></div><div class="txt"><div class="txt1"></div><div class="scrollbar1">  <ul>    <li>Åä¸ñ±â»ç</li>    <li>ÆÄÀÏ·µ</li>    <li>°æÁ¦ÇÐÀÚ</li>    <li>µ¥ÀÌÅÍ ºÐ¼®°¡</li> </ul></div><div class="txt2"></div><div class="scrollbar2">  <ul>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>  </ul></div></div>';
+        }
+        if(document.getElementById('m_selector').value === "ISFP"){
+          group.innerHTML =   '<div class="k_ratio">ÇÑ±¹ÀÎ Áß<br>5.6%</div><div class="group_t">    <h4><strong>¼ºÀÎ±ºÀÚÇü - ISFP</strong></h4>    </div>    <div class="hr_line1">          </div>    <div class="scrollbar0">      <ul>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>      </ul>    </div>    <div class="group_t">    </div>    <div class="hr_line2"></div>    <div class="vr_line">    </div>    <div class="group_t2">    <div class="jobs_celb"><h3>Best Jobs</h3></div>    <div class="jobs_celb"><h3>Celebrities</h3></div></div><div class="txt"><div class="txt1"></div><div class="scrollbar1">  <ul>    <li>ÆÐ¼ÇµðÀÚÀÌ³Ê</li>    <li>¹°¸®Ä¡·á»ç</li>    <li>Á¶°æ¼³°èÀÚ</li>  </ul></div><div class="txt2"></div><div class="scrollbar2">  <ul>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>  </ul></div></div>';        
+        }
+        if(document.getElementById('m_selector').value === "INFP"){
+          group.innerHTML =   '<div class="k_ratio">ÇÑ±¹ÀÎ Áß<br>5.9%</div><div class="group_t">    <h4><strong>ÀÜ ´Ù¸£Å©Çü - INFP</strong></h4>    </div>    <div class="hr_line1">          </div>    <div class="scrollbar0">      <ul>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>      </ul>    </div>    <div class="group_t">    </div>    <div class="hr_line2"></div>    <div class="vr_line">    </div>    <div class="group_t2">    <div class="jobs_celb"><h3>Best Jobs</h3></div>    <div class="jobs_celb"><h3>Celebrities</h3></div></div><div class="txt"><div class="txt1"></div><div class="scrollbar1">  <ul>    <li>±×·¡ÇÈ µðÀÚÀÌ³Ê</li>    <li>½É¸®ÇÐÀÚ</li>    <li>Ä¡·á»ç</li>    <li>ÀÛ°¡</li>    <li>ÆíÁýÀÚ</li>    <li>»çÈ¸º¹Áö»ç</li>    <li>¿¹¼ú°¡</li>    <li>¹Ì¼úÄ¡·á»ç</li> </ul></div><div class="txt2"></div><div class="scrollbar2">  <ul>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>  </ul></div></div>';
+        }
+        if(document.getElementById('m_selector').value === "INTP"){
+          group.innerHTML =   '<div class="k_ratio">ÇÑ±¹ÀÎ Áß<br>4.3%</div><div class="group_t">    <h4><strong>¾ÆÀÌµð¾î ¹ðÅ©Çü - INTP</strong></h4>    </div>    <div class="hr_line1">          </div>    <div class="scrollbar0">      <ul>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>      </ul>    </div>    <div class="group_t">    </div>    <div class="hr_line2"></div>    <div class="vr_line">    </div>    <div class="group_t2">    <div class="jobs_celb"><h3>Best Jobs</h3></div>    <div class="jobs_celb"><h3>Celebrities</h3></div></div><div class="txt"><div class="txt1"></div><div class="scrollbar1">  <ul>    <li>ÇÁ·Î±×·¡¸Ó</li>    <li>Àç¹« ºÐ¼®°¡</li>    <li>¼³°èÀÚ</li>    <li>±³¼ö</li>    <li>½É¸®ÇÐÀÚ</li>    <li>°æÁ¦ÇÐÀÚ</li>    <li>¿¬±¸¿ø</li>    <li>°æÂû</li>    <li>ºñÆò°¡</li> </ul></div><div class="txt2"></div><div class="scrollbar2">  <ul>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>  </ul></div></div>';
+        }
+        if(document.getElementById('m_selector').value === "INFJ"){
+          group.innerHTML =   '<div class="k_ratio">ÇÑ±¹ÀÎ Áß<br>2.8%</div><div class="group_t">    <h4><strong>¿¹¾ðÀÚÇü - INFJ</strong></h4>    </div>    <div class="hr_line1">          </div>    <div class="scrollbar0">      <ul>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>      </ul>    </div>    <div class="group_t">    </div>    <div class="hr_line2"></div>    <div class="vr_line">    </div>    <div class="group_t2">    <div class="jobs_celb"><h3>Best Jobs</h3></div>    <div class="jobs_celb"><h3>Celebrities</h3></div></div><div class="txt"><div class="txt1"></div><div class="scrollbar1">  <ul>    <li>Ä¡·á»ç</li>    <li>»çÈ¸º¹Áö»ç</li>    <li>°í°´°ü°è¸Å´ÏÀú</li>    <li>Á÷¾÷ »ó´ã»ç</li>    <li>Àú³Î¸®½ºÆ®</li>    <li>»óÇ°±âÈ¹ MD</li>    <li>Æ¯¼ö ±³»ç</li> </ul></div><div class="txt2"></div><div class="scrollbar2">  <ul>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>  </ul></div></div>';
+        }
+        if(document.getElementById('m_selector').value === "INTJ"){
+          group.innerHTML =   '<div class="k_ratio">ÇÑ±¹ÀÎ Áß<br>5.5%</div><div class="group_t">    <h4><strong>°úÇÐÀÚÇü - INTJ</strong></h4>    </div>    <div class="hr_line1">          </div>    <div class="scrollbar0">      <ul>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>      </ul>    </div>    <div class="group_t">    </div>    <div class="hr_line2"></div>    <div class="vr_line">    </div>    <div class="group_t2">    <div class="jobs_celb"><h3>Best Jobs</h3></div>    <div class="jobs_celb"><h3>Celebrities</h3></div></div><div class="txt"><div class="txt1"></div><div class="scrollbar1">  <ul>    <li>ºÐ¼®°¡</li>    <li>È¸°è»ç</li>    <li>ÀÎ·ùÇÐÀÚ</li>    <li>ÆÄÀÏ·µ</li>    <li>À¥ °³¹ßÀÚ</li>    <li>ÃÖ°í Àç¹« Ã¥ÀÓÀÚ</li>    <li>ÅõÀÚ ÀºÇà¿ø</li>    <li>SW°³¹ßÀÚ</li>  </ul></div><div class="txt2"></div><div class="scrollbar2">  <ul>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>  </ul></div></div>';
+        }
+        if(document.getElementById('m_selector').value === "ISTJ"){
+          group.innerHTML =   '<div class="k_ratio">ÇÑ±¹ÀÎ Áß<br>19.1%</div><div class="group_t">    <h4><strong>¼¼»óÀÇ ¼Ò±ÝÇü - ISTJ</strong></h4>    </div>    <div class="hr_line1">          </div>    <div class="scrollbar0">      <ul>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>      </ul>    </div>    <div class="group_t">    </div>    <div class="hr_line2"></div>    <div class="vr_line">    </div>    <div class="group_t2">    <div class="jobs_celb"><h3>Best Jobs</h3></div>    <div class="jobs_celb"><h3>Celebrities</h3></div></div><div class="txt"><div class="txt1"></div><div class="scrollbar1">  <ul>    <li>°¨¸®»ç</li>    <li>È¸°è»ç</li>    <li>Àç¹«°æ¿µÀÚ</li>    <li>À¥ °³¹ßÀÚ</li>    <li>Çü»ç</li>    <li>Åë°èÇÐÀÚ</li>    <li>¹ÙÀÌ¾î</li>    <li>±â»óÇÐÀÚ</li>    <li>¹ý·ü ¿¬±¸¿ø</li>  </ul></div><div class="txt2"></div><div class="scrollbar2">  <ul>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>  </ul></div></div>';
+        }
+        if(document.getElementById('m_selector').value === "ISFJ"){
+          group.innerHTML =   '<div class="k_ratio">ÇÑ±¹ÀÎ Áß<br>8.4%</div><div class="group_t">    <h4><strong>ÀÓ±Ý´Ô µÚ ±Ç·ÂÇü - ISFJ</strong></h4>    </div>    <div class="hr_line1">          </div>    <div class="scrollbar0">      <ul>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>      </ul>    </div>    <div class="group_t">    </div>    <div class="hr_line2"></div>    <div class="vr_line">    </div>    <div class="group_t2">    <div class="jobs_celb"><h3>Best Jobs</h3></div>    <div class="jobs_celb"><h3>Celebrities</h3></div></div><div class="txt"><div class="txt1"></div><div class="scrollbar1">  <ul>    <li>ÀÎ»ç °ü¸®ÀÚ</li>    <li>½Å¿ë »ó´ã°¡</li>    <li>¹°¸® Ä¡·á»ç</li>    <li>Á¤½Å°ú ÀÇ»ç</li>    <li>¹æ»ç¼± ±â»ç</li>    <li>ÇàÁ¤ º¸Á¶¿ø</li>    <li>Ä¡°ú ÀÇ»ç</li>    <li>»ç¼­</li>    <li>ÃÊµîÇÐ±³ ±³»ç</li>    <li>Ã¢¾÷°¡</li> </ul></div><div class="txt2"></div><div class="scrollbar2">  <ul>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>    <li>Nothing</li>  </ul></div></div>';
+        }
+        if(document.getElementById('m_selector').value === "ESTP"){
+          group.innerHTML =   '<div class="k_ratio">ÇÑ±¹ÀÎ Áß<br>4.7%</div><div class="group_t">    <h4><strong>¼ö¿Ï ÁÁÀº È°µ¿°¡Çü - ESTP</strong></h4>    </div>    <div class="hr_line1">          </div>    <div class="scrollbar0">      <ul>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>      </ul>    </div>    <div class="group_t">    </div>    <div class="hr_line2"></div>    <div class="vr_line">    </div>    <div class="group_t2">    <div class="jobs_celb"><h3>Best Jobs</h3></div>    <div class="jobs_celb"><h3>Celebrities</h3></div></div><div class="txt"><div class="txt1"></div><div class="scrollbar1">  <ul>    <li>Å½Á¤</li>    <li>ÀºÇà¿ø</li>    <li>ÅõÀÚ°¡</li>    <li>½ºÆ÷Ã÷ ÄÚÄ¡</li> </ul></div><div class="txt2"></div><div class="scrollbar2">  <ul>    <li>³ªÀÎ¹ÂÁö½º-°æ¸®</li>    <li>ÀÌÀ¯ºñ</li>    <li>ÀüÇö¹«</li>    <li>Madonna</li>    <li>Ernest-Hemingway</li>    <li>Rocket(Avengers)</li>  </ul></div></div>';
+        }
+        if(document.getElementById('m_selector').value === "ESFP"){
+          group.innerHTML =   '<div class="k_ratio">ÇÑ±¹ÀÎ Áß<br>5.3%</div><div class="group_t">    <h4><strong>»ç±³ÀûÀÎ À¯Çü - ESFP</strong></h4>    </div>    <div class="hr_line1">          </div>    <div class="scrollbar0">      <ul>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>      </ul>    </div>    <div class="group_t">    </div>    <div class="hr_line2"></div>    <div class="vr_line">    </div>    <div class="group_t2">    <div class="jobs_celb"><h3>Best Jobs</h3></div>    <div class="jobs_celb"><h3>Celebrities</h3></div></div><div class="txt"><div class="txt1"></div><div class="scrollbar1">  <ul>    <li>¾Æµ¿ º¹Áö »ó´ã°¡</li>    <li>¹è¿ì</li>    <li>µðÀÚÀÌ³Ê</li>    <li>È¯°æ °úÇÐÀÚ</li> </ul></div><div class="txt2"></div><div class="scrollbar2">  <ul>    <li>·¹µåº§ºª-À¢µð</li>    <li>¿¡ÀÏ¸®</li>    <li>±è¿µÃ¶</li>    <li>Adele</li>    <li>Elton John</li>    <li>Captain Marvel</li>  </ul></div></div>';
+        }
+        if(document.getElementById('m_selector').value === "ENFP"){
+          group.innerHTML =   '<div class="k_ratio">ÇÑ±¹ÀÎ Áß<br>8.0%</div><div class="group_t">    <h4><strong>½ºÆÄÅ©Çü - ENFP</strong></h4>    </div>    <div class="hr_line1">          </div>    <div class="scrollbar0">      <ul>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>      </ul>    </div>    <div class="group_t">    </div>    <div class="hr_line2"></div>    <div class="vr_line">    </div>    <div class="group_t2">    <div class="jobs_celb"><h3>Best Jobs</h3></div>    <div class="jobs_celb"><h3>Celebrities</h3></div></div><div class="txt"><div class="txt1"></div><div class="scrollbar1">  <ul>    <li>Àú³Î¸®½ºÆ®</li>    <li>¿ä½Ä¾÷ °æ¿µÀÚ</li>    <li>ÆÄÆ¼ÇÃ·¡³Ê</li>  </ul></div><div class="txt2"></div><div class="scrollbar2">  <ul>    <li>½ÎÀÌ</li>    <li>Àü¼Ò¹Ì</li>    <li>BTS-RM</li>    <li>Robert Downey, Jr.</li>    <li>Spider-man</li>    <li>Will Smith</li> </ul></div></div>';
+        }
+        if(document.getElementById('m_selector').value === "ENTP"){
+          group.innerHTML =   '<div class="k_ratio">ÇÑ±¹ÀÎ Áß<br>2.5%</div><div class="group_t">    <h4><strong>¹ß¸í°¡Çü - ENTP</strong></h4>    </div>    <div class="hr_line1">          </div>    <div class="scrollbar0">      <ul>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>      </ul>    </div>    <div class="group_t">    </div>    <div class="hr_line2"></div>    <div class="vr_line">    </div>    <div class="group_t2">    <div class="jobs_celb"><h3>Best Jobs</h3></div>    <div class="jobs_celb"><h3>Celebrities</h3></div></div><div class="txt"><div class="txt1"></div><div class="scrollbar1">  <ul>    <li>±â¾÷°¡</li>    <li>Á¤Ä¡°¡</li>    <li>ºÎµ¿»ê Àü¹®°¡</li>    <li>¸¶ÄÉÆÃ µð·ºÅÍ</li> </ul></div><div class="txt2"></div><div class="scrollbar2">  <ul>    <li>¾Çµ¿¹ÂÁö¼Ç-ÀÌÂùÇõ</li>    <li>ÀÌ¼ö±Ù</li>    <li>Àü¼Ò¹Î</li>    <li>The Joker</li>    <li>Captain Jack Sparrow</li>    <li>Adam Savage</li> </ul></div></div>';
+        }
+        if(document.getElementById('m_selector').value === "ENFJ"){
+          group.innerHTML =   '<div class="k_ratio">ÇÑ±¹ÀÎ Áß<br>1.5%</div><div class="group_t">    <h4><strong>¾ðº¯´É¼÷Çü - ENFJ</strong></h4>    </div>    <div class="hr_line1">          </div>    <div class="scrollbar0">      <ul>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>      </ul>    </div>    <div class="group_t">    </div>    <div class="hr_line2"></div>    <div class="vr_line">    </div>    <div class="group_t2">    <div class="jobs_celb"><h3>Best Jobs</h3></div>    <div class="jobs_celb"><h3>Celebrities</h3></div></div><div class="txt"><div class="txt1"></div><div class="scrollbar1">  <ul>    <li>PR Àü¹®°¡</li>    <li>¼¼ÀÏÁî ¸Å´ÏÀú</li>    <li>HR Àü¹®°¡</li> </ul></div><div class="txt2"></div><div class="scrollbar2">  <ul>    <li>°­´Ù´Ï¿¤</li>    <li>¹ÚÁø¿µ</li>    <li>¼ÛÁß±â</li>    <li>Barack Obama</li>    <li>Ben Affleck</li>    <li>Oprah Winfrey</li> </ul></div></div>';
+        }
+        if(document.getElementById('m_selector').value === "ENTJ"){
+          group.innerHTML =   '<div class="k_ratio">ÇÑ±¹ÀÎ Áß<br>3.7%</div><div class="group_t">    <h4><strong>ÁöµµÀÚÇü - ENTJ</strong></h4>    </div>    <div class="hr_line1">          </div>    <div class="scrollbar0">      <ul>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>      </ul>    </div>    <div class="group_t">    </div>    <div class="hr_line2"></div>    <div class="vr_line">    </div>    <div class="group_t2">    <div class="jobs_celb"><h3>Best Jobs</h3></div>    <div class="jobs_celb"><h3>Celebrities</h3></div></div><div class="txt"><div class="txt1"></div><div class="scrollbar1">  <ul>    <li>ÀÓ¿ø</li>    <li>º¯È£»ç</li>    <li>°æ¿µ ÄÁ¼³ÅÏÆ®</li>    <li>ºÐ¼® Àü¹®°¡</li> </ul></div><div class="txt2"></div><div class="scrollbar2">  <ul>    <li>½ºÀ®½º</li>    <li>ºí¶ôºñ-ÁöÄÚ</li>    <li>¼Ò³à½Ã´ë-Æ¼ÆÄ´Ï ¿µ</li>    <li>Steve Jobs</li>    <li>Gordon Ramsay</li>    <li>Doctor Strange</li> </ul></div></div>';
+        }
+        if(document.getElementById('m_selector').value === "ESTJ"){
+          group.innerHTML =   '<div class="k_ratio">ÇÑ±¹ÀÎ Áß<br>11.7%</div><div class="group_t">    <h4><strong>»ç¾÷°¡Çü - ESTJ</strong></h4>    </div>    <div class="hr_line1">          </div>    <div class="scrollbar0">      <ul>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>      </ul>    </div>    <div class="group_t">    </div>    <div class="hr_line2"></div>    <div class="vr_line">    </div>    <div class="group_t2">    <div class="jobs_celb"><h3>Best Jobs</h3></div>    <div class="jobs_celb"><h3>Celebrities</h3></div></div><div class="txt"><div class="txt1"></div><div class="scrollbar1">  <ul>    <li>º¸Çè ¼¼ÀÏÁî¸Ç</li>    <li>¾à»ç</li>    <li>º¯È£»ç</li>    <li>ÇÁ·ÎÁ§Æ® ¸Å´ÏÀú</li> </ul></div><div class="txt2"></div><div class="scrollbar2">  <ul>    <li>±è±¸¶ó</li>    <li>µ¥ÇÁÄÜ</li>    <li>¼Ò³à½Ã´ë-Á¦½ÃÄ«</li>    <li>James Monroe</li>    <li>Sonia Sotomayor</li>    <li>Robb Stark</li> </ul></div></div>';
+        }
+        if(document.getElementById('m_selector').value === "ESFJ"){
+          group.innerHTML =   '<div class="k_ratio">ÇÑ±¹ÀÎ Áß<br>6.6%</div><div class="group_t">    <h4><strong>Ä£¼±µµ¸ðÇü - ESFJ</strong></h4>    </div>    <div class="hr_line1">          </div>    <div class="scrollbar0">      <ul>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>        <li>Nothing</li>      </ul>    </div>    <div class="group_t">    </div>    <div class="hr_line2"></div>    <div class="vr_line">    </div>    <div class="group_t2">    <div class="jobs_celb"><h3>Best Jobs</h3></div>    <div class="jobs_celb"><h3>Celebrities</h3></div></div><div class="txt"><div class="txt1"></div><div class="scrollbar1">  <ul>    <li>ÆÇ¸Å ´ëÇ¥ÀÚ</li>    <li>°£È£»ç</li>    <li>Çï½ºÄÉ¾î Á¾»çÀÚ</li>  </ul></div><div class="txt2"></div><div class="scrollbar2">  <ul>    <li>¹Úº¸°Ë</li>    <li>±è¿¬¾Æ</li>    <li>°É½ºµ¥ÀÌ-Çý¸®</li>    <li>Taylor Swift</li>    <li>Jennifer Lopez</li>    <li>Bill Clinton</li>  </ul></div></div>';        }
+      })
+  </script>
 </html>
