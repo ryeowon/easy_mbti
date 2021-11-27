@@ -14,7 +14,67 @@
   </head>
   <body>
     <div class="background">
-        MBTI 궁합 알아보기
+      
+      <div class="mbti_list1">
+        <div class="group1">
+          <div class="m_dropdown">
+            <select name="MBTI" id="m_selector1">
+              <option value="Selection">Select MBTI</option>
+              <option value="ISTP">ISTP</option>
+              <option value="ISFP">ISFP</option>
+              <option value="INFP">INFP</option>
+              <option value="INTP">INTP</option>
+              <option value="INTJ">INTJ</option>
+              <option value="ISTJ">ISTJ</option>
+              <option value="ISFJ">ISFJ</option>
+              <option value="ESTP">ESTP</option>
+              <option value="ESFP">ESFP</option>
+              <option value="ENFP">ENFP</option>
+              <option value="ENTP">ENTP</option>
+              <option value="ENFJ">ENFJ</option>
+              <option value="ENTJ">ENTJ</option>
+              <option value="ESTJ">ESTJ</option>
+              <option value="ESFJ">ESFJ</option>
+            </select>
+          </div>
+      </div>
+
+
+      <div class="mbti_list2">
+        <div class="group2">
+          <div class="m_dropdown">
+            <select name="MBTI" id="m_selector2">
+              <option value="Selection">Select MBTI</option>
+              <option value="ISTP">ISTP</option>
+              <option value="ISFP">ISFP</option>
+              <option value="INFP">INFP</option>
+              <option value="INTP">INTP</option>
+              <option value="INTJ">INTJ</option>
+              <option value="ISTJ">ISTJ</option>
+              <option value="ISFJ">ISFJ</option>
+              <option value="ESTP">ESTP</option>
+              <option value="ESFP">ESFP</option>
+              <option value="ENFP">ENFP</option>
+              <option value="ENTP">ENTP</option>
+              <option value="ENFJ">ENFJ</option>
+              <option value="ENTJ">ENTJ</option>
+              <option value="ESTJ">ESTJ</option>
+              <option value="ESFJ">ESFJ</option>
+            </select>
+          </div>
+      </div>
+
+      <button id = "see_relation1">궁합 보기</button>
+
+      <textarea id="story" name="story"
+          rows="2" cols="28" readonly="readonly">
+      </textarea>
+
+
+      <a href="./index.html">
+        <div class="main_button w-25">홈으로가기</div>
+      </a>
+
 
     </div>
     </div>
@@ -23,5 +83,548 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      let button1 = document.querySelector('#see_relation1');
+
+      let select1 = document.getElementById('m_selector1');
+
+      let select2 = document.getElementById('m_selector2');
+
+      let mbti = [];
+
+
+    document.querySelector("#m_selector1").addEventListener("click", () => {
+      document.querySelector("#m_selector2").addEventListener("click", () => {
+        
+        if(document.getElementById('m_selector1').value === "INFP"){
+          if(document.getElementById('m_selector2').value === "INFP" || 
+          document.getElementById('m_selector2').value === "ENFP" || 
+          document.getElementById('m_selector2').value === "INFJ" || 
+          document.getElementById('m_selector2').value === "INTJ" || 
+          document.getElementById('m_selector2').value === "INTP" || 
+          document.getElementById('m_selector2').value === "ENTP"){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '아주 좋은 관계가 될수 있음!';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "ENFJ" || 
+          document.getElementById('m_selector2').value === "ENTJ"){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '우리 인연 영원히 뽀에버! 천생연분';  
+            })
+          }
+          else {
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '진짜 궁합 최악! 지구 멸망의 길';  
+            })
+          }
+        }
+        else if(document.getElementById('m_selector1').value === "ENFP"){
+          if(document.getElementById('m_selector2').value === "INFP" || 
+          document.getElementById('m_selector2').value === "ENFP" || 
+          document.getElementById('m_selector2').value === "ENFJ" || 
+          document.getElementById('m_selector2').value === "ENTJ" || 
+          document.getElementById('m_selector2').value === "INTP" || 
+          document.getElementById('m_selector2').value === "ENTP"){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '아주 좋은 관계가 될수 있음!';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "INFJ" || 
+          document.getElementById('m_selector2').value === "INTJ"){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '우리 인연 영원히 뽀에버! 천생연분';  
+            })
+          }
+          else {
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '진짜 궁합 최악! 지구 멸망의 길';  
+            })
+          }
+        }
+        else if(document.getElementById('m_selector1').value === "INFJ"){
+          if(document.getElementById('m_selector2').value === "INFP" || 
+          document.getElementById('m_selector2').value === "ENFJ" || 
+          document.getElementById('m_selector2').value === "INFJ" || 
+          document.getElementById('m_selector2').value === "INTJ" || 
+          document.getElementById('m_selector2').value === "INTP" || 
+          document.getElementById('m_selector2').value === "ENTJ"){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '아주 좋은 관계가 될수 있음!';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "ENFP" || 
+          document.getElementById('m_selector2').value === "ENTP"){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '우리 인연 영원히 뽀에버! 천생연분';  
+            })
+          }
+          else{
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '진짜 궁합 최악! 지구 멸망의 길';  
+            })
+          }
+        }
+        else if(document.getElementById('m_selector1').value === "ENFJ"){
+          if(document.getElementById('m_selector2').value === "ENFP" || 
+          document.getElementById('m_selector2').value === "INFJ" || 
+          document.getElementById('m_selector2').value === "ENFJ" || 
+          document.getElementById('m_selector2').value === "INTJ" || 
+          document.getElementById('m_selector2').value === "ENTJ" || 
+          document.getElementById('m_selector2').value === "INTP" ||
+          document.getElementById('m_selector2').value === "ENTP"){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '아주 좋은 관계가 될수 있음!';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "INFP" || 
+          document.getElementById('m_selector2').value === "ISFP"){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '우리 인연 영원히 뽀에버! 천생연분';  
+            })
+          }
+          else {
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '진짜 궁합 최악! 지구 멸망의 길';  
+            })
+          }
+        }
+        else if(document.getElementById('m_selector1').value === "INTJ"){
+          if(document.getElementById('m_selector2').value === "ISFP" || 
+          document.getElementById('m_selector2').value === "ESFP" || 
+          document.getElementById('m_selector2').value === "ISTP"|| 
+          document.getElementById('m_selector2').value === "ESTP"
+          ){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '안맞는 것 맞는 것 딱 반반';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "ENFP" || 
+          document.getElementById('m_selector2').value === "ENTP"){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '우리 인연 영원히 뽀에버! 천생연분';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "ISFJ" || 
+          document.getElementById('m_selector2').value === "ESFJ" || 
+          document.getElementById('m_selector2').value === "ISTJ"|| 
+          document.getElementById('m_selector2').value === "ESTJ"
+          ) {
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '뭐..최악은 면했지만. 그닥..';  
+            })
+          }
+          else{
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '아주 좋은 관계가 될 수 있음!';  
+            })
+          }
+        }
+        else if(document.getElementById('m_selector1').value === "ENTJ"){
+          if(document.getElementById('m_selector2').value === "ENFP" || 
+          document.getElementById('m_selector2').value === "INFJ" || 
+          document.getElementById('m_selector2').value === "ENFJ" || 
+          document.getElementById('m_selector2').value === "INTJ" || 
+          document.getElementById('m_selector2').value === "ENTJ" ||
+          document.getElementById('m_selector2').value === "ENTP"){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '아주 좋은 관계가 될수 있음!';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "INFP" || 
+          document.getElementById('m_selector2').value === "INTP"){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '우리 인연 영원히 뽀에버! 천생연분';  
+            })
+          }
+          else {
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '안맞는 것 맞는 것 딱 반반';  
+            })
+          }
+        }
+        else if(document.getElementById('m_selector1').value === "INTP"){
+          if(document.getElementById('m_selector2').value === "ISFP" || 
+          document.getElementById('m_selector2').value === "ESFP" || 
+          document.getElementById('m_selector2').value === "ISTP"|| 
+          document.getElementById('m_selector2').value === "ESTP"
+          ){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '안맞는 것 맞는 것 딱 반반';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "ENTJ" || 
+          document.getElementById('m_selector2').value === "ESTJ"){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '우리 인연 영원히 뽀에버! 천생연분';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "ISFJ" || 
+          document.getElementById('m_selector2').value === "ESFJ" || 
+          document.getElementById('m_selector2').value === "ISTJ"
+          ) {
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '뭐..최악은 면했지만. 그닥..';  
+            })
+          }
+          else{
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '아주 좋은 관계가 될 수 있음!';  
+            })
+          }
+        }
+        else if(document.getElementById('m_selector1').value === "ENTP"){
+          if(document.getElementById('m_selector2').value === "ISFP" || 
+          document.getElementById('m_selector2').value === "ESFP" || 
+          document.getElementById('m_selector2').value === "ISTP"|| 
+          document.getElementById('m_selector2').value === "ESTP"
+          ){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '안맞는 것 맞는 것 딱 반반';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "INFJ" || 
+          document.getElementById('m_selector2').value === "INTJ"){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '우리 인연 영원히 뽀에버! 천생연분';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "ISFJ" || 
+          document.getElementById('m_selector2').value === "ESFJ" || 
+          document.getElementById('m_selector2').value === "ISTJ"|| 
+          document.getElementById('m_selector2').value === "ESTJ"
+          ) {
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '뭐..최악은 면했지만. 그닥..';  
+            })
+          }
+          else{
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '아주 좋은 관계가 될 수 있음!';  
+            })
+          }
+        }
+        else if(document.getElementById('m_selector1').value === "ISFP"){
+          if(document.getElementById('m_selector2').value === "INFP" || 
+          document.getElementById('m_selector2').value === "ENFP" || 
+          document.getElementById('m_selector2').value === "INFJ"
+          ){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '진짜 궁합 최악! 지구 멸망의 길';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "ENFJ" || 
+          document.getElementById('m_selector2').value === "ESFJ"|| 
+          document.getElementById('m_selector2').value === "ESTJ"){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '우리 인연 영원히 뽀에버! 천생연분';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "ISFP" || 
+          document.getElementById('m_selector2').value === "ESFP" || 
+          document.getElementById('m_selector2').value === "ISTP"|| 
+          document.getElementById('m_selector2').value === "ESTP"
+          ) {
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '뭐..최악은 면했지만. 그닥..';  
+            })
+          }
+          else{
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '안맞는 것 맞는 것 딱 반반';  
+            })
+          }
+        }
+        else if(document.getElementById('m_selector1').value === "ESFP"){
+          if(document.getElementById('m_selector2').value === "INFP" || 
+          document.getElementById('m_selector2').value === "ENFP" || 
+          document.getElementById('m_selector2').value === "INFJ"|| 
+          document.getElementById('m_selector2').value === "ENFJ"
+          ){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '진짜 궁합 최악! 지구 멸망의 길';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "ISFJ" || 
+          document.getElementById('m_selector2').value === "ISTJ"){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '우리 인연 영원히 뽀에버! 천생연분';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "ISFP" || 
+          document.getElementById('m_selector2').value === "ESFP" || 
+          document.getElementById('m_selector2').value === "ISTP"|| 
+          document.getElementById('m_selector2').value === "ESTP"
+          ) {
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '뭐..최악은 면했지만. 그닥..';  
+            })
+          }
+          else{
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '안맞는 것 맞는 것 딱 반반';  
+            })
+          }
+        }
+        else if(document.getElementById('m_selector1').value === "ISTP"){
+          if(document.getElementById('m_selector2').value === "INFP" || 
+          document.getElementById('m_selector2').value === "ENFP" || 
+          document.getElementById('m_selector2').value === "INFJ"|| 
+          document.getElementById('m_selector2').value === "ENFJ"
+          ){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '진짜 궁합 최악! 지구 멸망의 길';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "ESFJ" || 
+          document.getElementById('m_selector2').value === "ESTJ"){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '우리 인연 영원히 뽀에버! 천생연분';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "ISFP" || 
+          document.getElementById('m_selector2').value === "ESFP" || 
+          document.getElementById('m_selector2').value === "ISTP"|| 
+          document.getElementById('m_selector2').value === "ESTP"
+          ) {
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '뭐..최악은 면했지만. 그닥..';  
+            })
+          }
+          else{
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '안맞는 것 맞는 것 딱 반반';  
+            })
+          }
+        }
+        else if(document.getElementById('m_selector1').value === "ESTP"){
+          if(document.getElementById('m_selector2').value === "INFP" || 
+          document.getElementById('m_selector2').value === "ENFP" || 
+          document.getElementById('m_selector2').value === "INFJ"|| 
+          document.getElementById('m_selector2').value === "ENFJ"
+          ){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '진짜 궁합 최악! 지구 멸망의 길';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "ISFJ" || 
+          document.getElementById('m_selector2').value === "ISTJ"){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '우리 인연 영원히 뽀에버! 천생연분';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "ISFP" || 
+          document.getElementById('m_selector2').value === "ESFP" || 
+          document.getElementById('m_selector2').value === "ISTP"|| 
+          document.getElementById('m_selector2').value === "ESTP"
+          ) {
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '뭐..최악은 면했지만. 그닥..';  
+            })
+          }
+          else{
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '안맞는 것 맞는 것 딱 반반';  
+            })
+          }
+        }
+        else if(document.getElementById('m_selector1').value === "ISFJ"){
+          if(document.getElementById('m_selector2').value === "INFP" || 
+          document.getElementById('m_selector2').value === "ENFP" || 
+          document.getElementById('m_selector2').value === "INFJ"|| 
+          document.getElementById('m_selector2').value === "ENFJ"
+          ){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '진짜 궁합 최악! 지구 멸망의 길';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "ESFP" || 
+          document.getElementById('m_selector2').value === "ESTP"){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '우리 인연 영원히 뽀에버! 천생연분';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "INTJ" || 
+          document.getElementById('m_selector2').value === "INTP" ||  
+          document.getElementById('m_selector2').value === "ENTP"
+          ) {
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '뭐..최악은 면했지만. 그닥..';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "INTJ" || 
+          document.getElementById('m_selector2').value === "INTP" ||  
+          document.getElementById('m_selector2').value === "ENTP"
+          ) {
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '안맞는 것 맞는 것 딱 반반';  
+            })
+          }
+          else{
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '아주 좋은 관계가 될 수 있음!';  
+            })
+          }
+        }
+        else if(document.getElementById('m_selector1').value === "ESFJ"){
+          if(document.getElementById('m_selector2').value === "INFP" || 
+          document.getElementById('m_selector2').value === "ENFP" || 
+          document.getElementById('m_selector2').value === "INFJ"|| 
+          document.getElementById('m_selector2').value === "ENFJ"
+          ){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '진짜 궁합 최악! 지구 멸망의 길';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "ISFP" || 
+          document.getElementById('m_selector2').value === "ISTP"){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '우리 인연 영원히 뽀에버! 천생연분';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "INTJ" || 
+          document.getElementById('m_selector2').value === "INTP" ||  
+          document.getElementById('m_selector2').value === "ENTP"
+          ) {
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '뭐..최악은 면했지만. 그닥..';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "ENTJ" || 
+          document.getElementById('m_selector2').value === "ESFP" ||  
+          document.getElementById('m_selector2').value === "ESTP"
+          ) {
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '안맞는 것 맞는 것 딱 반반';  
+            })
+          }
+          else{
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '아주 좋은 관계가 될 수 있음!';  
+            })
+          }
+        } 
+        else if(document.getElementById('m_selector1').value === "ESFJ"){
+          if(document.getElementById('m_selector2').value === "INFP" || 
+          document.getElementById('m_selector2').value === "ENFP" || 
+          document.getElementById('m_selector2').value === "INFJ"|| 
+          document.getElementById('m_selector2').value === "ENFJ"
+          ){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '진짜 궁합 최악! 지구 멸망의 길';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "ESFP" || 
+          document.getElementById('m_selector2').value === "ESTP"){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '우리 인연 영원히 뽀에버! 천생연분';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "INTJ" || 
+          document.getElementById('m_selector2').value === "INTP" ||  
+          document.getElementById('m_selector2').value === "ENTP"
+          ) {
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '뭐..최악은 면했지만. 그닥..';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "ENTJ" || 
+          document.getElementById('m_selector2').value === "ISFP" ||  
+          document.getElementById('m_selector2').value === "ISTP"
+          ) {
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '안맞는 것 맞는 것 딱 반반';  
+            })
+          }
+          else{
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '아주 좋은 관계가 될 수 있음!';  
+            })
+          }
+        }
+        else if(document.getElementById('m_selector1').value === "ISTJ"){
+          if(document.getElementById('m_selector2').value === "INFP" || 
+          document.getElementById('m_selector2').value === "ENFP" || 
+          document.getElementById('m_selector2').value === "INFJ"|| 
+          document.getElementById('m_selector2').value === "ENFJ"
+          ){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '진짜 궁합 최악! 지구 멸망의 길';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "ESFP" || 
+          document.getElementById('m_selector2').value === "ESTP"){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '우리 인연 영원히 뽀에버! 천생연분';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "INTJ" || 
+          document.getElementById('m_selector2').value === "INTP" ||  
+          document.getElementById('m_selector2').value === "ENTP"
+          ) {
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '뭐..최악은 면했지만. 그닥..';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "ENTJ" || 
+          document.getElementById('m_selector2').value === "ISFP" ||  
+          document.getElementById('m_selector2').value === "ISTP"
+          ) {
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '안맞는 것 맞는 것 딱 반반';  
+            })
+          }
+          else{
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '아주 좋은 관계가 될 수 있음!';  
+            })
+          }
+        }
+        else if(document.getElementById('m_selector1').value === "ESTJ"){
+          if(document.getElementById('m_selector2').value === "INFP" || 
+          document.getElementById('m_selector2').value === "ENFP" || 
+          document.getElementById('m_selector2').value === "INFJ"|| 
+          document.getElementById('m_selector2').value === "ENFJ"
+          ){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '진짜 궁합 최악! 지구 멸망의 길';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "INTP" || 
+          document.getElementById('m_selector2').value === "ISFP"|| 
+          document.getElementById('m_selector2').value === "ISTP"){
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '우리 인연 영원히 뽀에버! 천생연분';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "INTJ" ||  
+          document.getElementById('m_selector2').value === "ENTP"
+          ) {
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '뭐..최악은 면했지만. 그닥..';  
+            })
+          }
+          else if(document.getElementById('m_selector2').value === "ENTJ" || 
+          document.getElementById('m_selector2').value === "ESFP" ||  
+          document.getElementById('m_selector2').value === "ESTP"
+          ) {
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '안맞는 것 맞는 것 딱 반반';  
+            })
+          }
+          else{
+            button1.addEventListener("click", () => {
+              document.getElementById('story').value = '아주 좋은 관계가 될 수 있음!';  
+            })
+          }
+        }
+
+        
+      })
+    })
+
+      
+    </script>
   </body>
 </html>
