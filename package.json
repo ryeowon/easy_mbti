@@ -1,0 +1,19 @@
+{
+  "name": "easy_mbti",
+  "version": "1.2.0",
+  "description": "MBTI 웹 어플리케이션",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryeowon/easy_mbti.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryeowon/easy_mbti/issues"
+  },
+  "homepage": "https://github.com/ryeowon/easy_mbti#readme"
+}
