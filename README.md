@@ -16,14 +16,25 @@
 2. MBTI를 이미 접하신 분: "유형별 특징 알아보기" 또는 "MBTI 궁합 알아보기"를 진행하여 MBTI에 대해 알아보시기를 바랍니다.
 ## 스크린샷
 
-+ 메인메뉴
++ 메인메뉴  
+  ![screensh](./1.png)
 + 유형별 특징 알아보기 클릭
+  ![screensh](./2.png)
   + MBTI 선택 이후
+    ![screensh](./3.png)
 + 재미로 보는 MBTI 궁합 클릭
+  ![screensh](./4.png)
   + 두 가지 MBTI 선택 이후 궁합보기 클릭
+    ![screensh](./5.png)
 + 미니 MBTI 테스트 클릭
+  ![screensh](./6.png)
   + 테스트 결과
+    ![screensh](./7.png)
 ## 데모 영상
 + [demo video](https://youtu.be/RppGYcuSsD0)
 ## 기타 사항
 + 한국인 중 MBTI 비율 출처: "MBTI 연구소"
+## 멤버
+홍여원 (ryeowon13@gmail.com)  
+김재영 (a30169123@gmail.com)  
+이주용 (wndyd0131@naver.com)  
