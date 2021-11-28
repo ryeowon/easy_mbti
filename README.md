@@ -1,4 +1,4 @@
-# EASY MBTI v1.3.0
+# EASY MBTI v1.2.0
 ## A Brief Overview  
   EASY MBTI는 MBTI 관련 정보를 제공하는 웹 어플리케이션입니다.  
   빠르게 자신의 mbti를 알아볼 수 있는 미니테스트와 mbti 유형별 특징에 대한 정보를 제공합니다.
