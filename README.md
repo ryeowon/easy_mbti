@@ -17,19 +17,19 @@
 ## 스크린샷
 
 + 메인메뉴  
-  ![screensh](./1.png)
+  ![screensh](./images/1.png)
 + 유형별 특징 알아보기 클릭
-  ![screensh](./2.png)
+  ![screensh](./images/2.png)
   + MBTI 선택 이후
-    ![screensh](./3.png)
+    ![screensh](./images/3.png)
 + 재미로 보는 MBTI 궁합 클릭
-  ![screensh](./4.png)
+  ![screensh](./images/4.png)
   + 두 가지 MBTI 선택 이후 궁합보기 클릭
-    ![screensh](./5.png)
+    ![screensh](./images/5.png)
 + 미니 MBTI 테스트 클릭
-  ![screensh](./6.png)
+  ![screensh](./images/6.png)
   + 테스트 결과
-    ![screensh](./7.png)
+    ![screensh](./images/7.png)
 ## 데모 영상
 + [link](https://youtu.be/RppGYcuSsD0)
 ## 기타 사항
