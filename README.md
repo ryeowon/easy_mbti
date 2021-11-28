@@ -1,4 +1,4 @@
-# easy mbti    
+# easy mbti  
 ### 설명  
 ---
 ### 사용 방법
