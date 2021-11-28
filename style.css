@@ -182,9 +182,6 @@ a:hover {
   position: absolute;
 }
 
-#box {
-}
-
 .k_ratio {
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
@@ -246,6 +243,7 @@ a:hover {
   border-width: 3px;
   background-color: rgb(255, 255, 255, 0.7);
   border-color: burlywood;
+  cursor: pointer;
 }
 .txt {
   display: flex;
