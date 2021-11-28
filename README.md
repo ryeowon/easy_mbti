@@ -6,6 +6,7 @@
 + index.html 을 메인페이지로 하여 총 3개의 page를 만들었고(page1, 2, 3 html)
 각 페이지에는 style.css를 적용했다
 
+
 ## 기능
 + 유형별 특징 알아보기
 + MBTI 궁합 알아보기
