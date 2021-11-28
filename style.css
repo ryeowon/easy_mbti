@@ -95,6 +95,10 @@ a:hover {
   text-align: center;
 }
 
+.font {
+  font-family: "Gowun Batang", serif;
+}
+
 .brown {
   color: rgb(73, 61, 36);
 }
