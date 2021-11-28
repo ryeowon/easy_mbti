@@ -21,6 +21,7 @@ a:hover {
   margin-top: 3vh;
   border-radius: 20px;
   padding: 20px;
+  box-shadow: 5px 5px 7px rgb(168, 165, 157);
 }
 
 .main_button {
