@@ -31,9 +31,10 @@
 ## Demo Video
 + 어플리케이션 사용법을 자세히 보고 싶으신 분은 아래 링크의 영상을 참고하시기 바랍니다.
   + [https://youtu.be/RppGYcuSsD0](https://youtu.be/RppGYcuSsD0)
-## Reference
+## Note
 + MBTI 유형별 한국인 비율은 한국 MBTI 연구소의 통계를 바탕으로 작성하였습니다.
++ 미니테스트의 MBTI 결과는 정확하지 않을 수 있으며, 정확한 결과를 원하시는 분은 공식 MBTI 테스트를 이용하시기 바랍니다.
 ## Members
 ryeowon - 홍여원 (ryeowon13@gmail.com)  
 kimjae0 - 김재영 (a30169123@gmail.com)  
-wndyd - 이주용 (wndyd0131@naver.com)  
+wndyd0131 - 이주용 (wndyd0131@naver.com)  
