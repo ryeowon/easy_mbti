@@ -12,7 +12,7 @@
 + MBTI 궁합 알아보기
 + 미니 MBTI 테스트
 ## 사용 방법
-link로 접속해서 사용하시면 됩니다.  
+[link](https://ryeowon.github.io/easy_mbti/) 로 접속해서 사용하시면 됩니다.  
 
 접속 후:  
 1. MBTI를 처음 접하신 분: "미니 MBTI 테스트"부터 진행하여 자신의 MBTI를 쉽게 얻어내시기를 바랍니다.
