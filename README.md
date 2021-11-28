@@ -24,5 +24,6 @@
 + 미니 MBTI 테스트 클릭
   + 테스트 결과
 ## 데모 영상
++ [link](https://youtu.be/RppGYcuSsD0)
 ## 기타 사항
 + 한국인 중 MBTI 비율 출처: "MBTI 연구소"
