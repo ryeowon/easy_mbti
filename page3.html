@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>EASY_MBTI</title>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
   </head>
   <body>
     <div class="background">
@@ -47,6 +48,19 @@
       let button2 = document.querySelector('#btn2');
       let question = document.querySelector('#question');
 
+      function saveAs(uri, filename) {
+      // 캡쳐된 파일을 이미지 파일로 내보낸다.
+        var link = document.createElement('a');
+        if (typeof link.download === 'string') {
+          link.href = uri;
+          link.download = filename;
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        } else {
+          window.open(uri);
+        }
+      }
       button1.addEventListener("click", () => {
         console.log("button clicked");
 
@@ -85,16 +99,19 @@
             link.href = "./page1.html";
             
             let btn = document.createElement("button");
-            let restart = document.createElement("button");
-            restart.addEventListener("click", () => {
-              location.reload();
+            let savebtn = document.createElement("button");
+            savebtn.addEventListener("click", () => {
+              html2canvas(document.querySelector("#question_card")).then(canvas => {
+              saveAs(canvas.toDataURL('image/png'),"easy_mbti.png");
+              });
             })
-            restart.textContent = "다시하기"
+            savebtn.textContent = "이미지로 저장하기"
+            savebtn.id = "save"
             link.appendChild(btn);
             btn.textContent = mbti[0] + mbti[1] + mbti[2] + mbti[3] + " 특징 알아보러 가기"
             card.appendChild(result);
             card.appendChild(link);
-            card.appendChild(restart);
+            card.appendChild(savebtn);
             break;
         }
 
@@ -136,21 +153,22 @@
             link.href = "./page1.html";
             
             let btn = document.createElement("button");
-            let restart = document.createElement("button");
-            restart.addEventListener("click", () => {
-              location.reload();
+            let savebtn = document.createElement("button");
+            savebtn.addEventListener("click", () => {
+              html2canvas(document.querySelector("#question_card")).then(canvas => {
+              saveAs(canvas.toDataURL('image/png'),"easy_mbti.png");
+              });
             })
-            link.appendChild(btn);
-            restart.textContent = "다시하기"
+            savebtn.textContent = "이미지로 저장하기"
+            savebtn.id = "save"
             btn.textContent = mbti[0] + mbti[1] + mbti[2] + mbti[3] + " 특징 알아보러 가기"
+            link.appendChild(btn);
             card.appendChild(result);
             card.appendChild(link);
-            card.appendChild(restart);
+            card.appendChild(savebtn);
             break;
         }
-      })
-
-      
+      })      
     </script>
   </body>
 </html>

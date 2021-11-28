@@ -182,9 +182,6 @@ a:hover {
   position: absolute;
 }
 
-#box {
-}
-
 .k_ratio {
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
@@ -201,7 +198,6 @@ a:hover {
 
 .txt {
   display: flex;
-  justify-content: space-between;
 }
 .group {
   background: rgb(255, 255, 255, 0.7);
@@ -246,6 +242,7 @@ a:hover {
   border-width: 3px;
   background-color: rgb(255, 255, 255, 0.7);
   border-color: burlywood;
+  cursor: pointer;
 }
 .txt {
   display: flex;
@@ -269,29 +266,23 @@ h3 {
 }
 
 .scrollbar1 {
-  margin-left: 3px;
-  margin-top: 10px;
   width: 250px;
   height: 125px;
   overflow-y: scroll;
-  margin-right: 40px;
 }
 
 .scrollbar2 {
-  margin-right: 30px;
-  margin-top: 10px;
-  margin-bottom: 15px;
   width: 250px;
   height: 125px;
   overflow-y: scroll;
 }
 ul {
   list-style-type: disclosure-closed;
-  margin-left: 20px;
-  font-size: 20px;
+  font-size: 17px;
 }
-.jobs_celb {
-  margin-left: 20px;
+.jobs_celb h4 {
+  font-weight: bold;
+  padding: 10px;
 }
 
 .page_button {
