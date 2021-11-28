@@ -1,39 +1,38 @@
-# EASY MBTI  
-## 설명  
-+ 요즘 유행하는 MBTI를 주제로해서 관련 웹 어플리케이션을 만들었습니다. 시간이 오래걸리는 기존 MBTI검사를 간단한 미니테스트로 만들었고 mbti의 종류와 유형별 특징, 궁합을 알 수 있습니다.
-+ index.html 을 메인페이지로 하여 총 3개의 페이지(page1, 2, 3 html)를 만들었고 각 페이지에는 style.css를 적용했습니다.
+# EASY MBTI v1.3.0
+## A Brief Overview  
+  EASY MBTI는 MBTI 관련 정보를 제공하는 웹 어플리케이션입니다. 많은 시간이 소요되는 기존 MBTI 검사를 대신할 수 있는 간단한 미니테스트와 mbti 유형별 특징에 대한 정보를 제공합니다.
 
 ## 기능
 + 유형별 특징 알아보기
+  - 16가지 유형들의 성격 특성, 베스트 직업, 유명인, 한국인 비율
 + MBTI 궁합 알아보기
+  - 총 5가지의 궁합 존재
 + 미니 MBTI 테스트
-## 사용 방법
-[link](https://ryeowon.github.io/easy_mbti/)로 접속해서 사용하시면 됩니다.  
+  - 4개의 질문을 통해 MBTI 도출
+  - 결과를 이미지로 저장 가능
+## How to Use
+[EASY MBTI](https://ryeowon.github.io/easy_mbti/)로 접속합니다.  
 
 접속 후:  
-1. MBTI를 처음 접하신 분: "미니 MBTI 테스트"부터 진행하여 자신의 MBTI를 쉽게 얻어내시기를 바랍니다.
-2. MBTI를 이미 접하신 분: "유형별 특징 알아보기" 또는 "MBTI 궁합 알아보기"를 진행하여 MBTI에 대해 알아보시기를 바랍니다.
-## 스크린샷
+1. MBTI를 처음 접하신 분: "미니 MBTI 테스트"부터 진행하여 자신의 MBTI를 쉽게 알아봅니다.
+2. MBTI를 이미 접하신 분: "유형별 특징 알아보기" 또는 "MBTI 궁합 알아보기"를 통해 알고 싶은 정보를 얻습니다.
+## Example
 
-+ 메인메뉴  
++ 메인 메뉴  
   ![screensh](./images/1.png)
-+ 유형별 특징 알아보기 클릭
-  ![screensh](./images/2.png)
-  + MBTI 선택 이후
-    ![screensh](./images/3.png)
-+ 재미로 보는 MBTI 궁합 클릭
-  ![screensh](./images/4.png)
-  + 두 가지 MBTI 선택 이후 궁합보기 클릭
-    ![screensh](./images/5.png)
-+ 미니 MBTI 테스트 클릭
-  ![screensh](./images/6.png)
-  + 테스트 결과
-    ![screensh](./images/7.png)
-## 데모 영상
-+ [demo video](https://youtu.be/RppGYcuSsD0)
-## 기타 사항
-+ 한국인 중 MBTI 비율 출처: "MBTI 연구소"
-## 멤버
-홍여원 (ryeowon13@gmail.com)  
-김재영 (a30169123@gmail.com)  
-이주용 (wndyd0131@naver.com)  
++ 유형별 특징 알아보기
+  ![screensh](./images/page1.png)
++ 재미로 보는 MBTI 궁합
+  ![screensh](./images/page2.png)
++ 미니 MBTI 테스트
+  ![screensh](./images/page3.png)
+  
+## Demo Video
++ 어플리케이션 사용법을 자세히 보고 싶으신 분은 아래 링크의 영상을 참고하시기 바랍니다.
+  + [https://youtu.be/RppGYcuSsD0](https://youtu.be/RppGYcuSsD0)
+## Reference
++ MBTI 유형별 한국인 비율은 한국 MBTI 연구소의 통계를 바탕으로 작성하였습니다.
+## Members
+ryeowon - 홍여원 (ryeowon13@gmail.com)  
+kimjae0 - 김재영 (a30169123@gmail.com)  
+wndyd - 이주용 (wndyd0131@naver.com)  
