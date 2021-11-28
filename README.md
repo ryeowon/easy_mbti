@@ -36,5 +36,5 @@
 + 미니 MBTI 테스트는 공식 테스트가 아니므로, MBTI 결과가 정확하지 않을 수 있습니다.
 ## Members
 ryeowon - 홍여원 (ryeowon13@gmail.com)  
-kimjae0 - 김재영 (a30169123@gmail.com)  
+KimJae0 - 김재영 (a30169123@gmail.com)  
 wndyd0131 - 이주용 (wndyd0131@naver.com)  
