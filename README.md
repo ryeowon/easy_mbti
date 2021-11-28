@@ -31,6 +31,7 @@
   + 테스트 결과
     ![screensh](./7.png)
 ## 데모 영상
++ [link](https://youtu.be/RppGYcuSsD0)
 ## 기타 사항
 + 한국인 중 MBTI 비율 출처: "MBTI 연구소"
 ## 멤버
